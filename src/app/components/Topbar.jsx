@@ -2,13 +2,9 @@ import { Phone, Mail } from "lucide-react";
 
 export default function TopBar() {
   return (
-    <div className="w-full bg-[#DE3B00] text-white text-sm">
-      <div className="max-w-7xl mx-auto px-4 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
+    <div className="w-full bg-[#113565] text-white text-sm">
+      <div className="max-w-7xl mx-auto px-4 py-2 flex flex-col md:flex-row items-center justify-end gap-2">
         
-        {/* Left Text */}
-        <p className="text-center md:text-left">
-          "Working with Brooklyn Designs changed how we show up." ~ John Maggio
-        </p>
 
         {/* Right Contact Info */}
         <div className="flex items-center gap-4 flex-wrap justify-center md:justify-end">
