@@ -80,7 +80,7 @@ export default function HeroSection() {
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative w-full max-w-[550px]">
               <Image
-                src="/girl-pic.jfif" // your student image
+                src="/girl-image.png" // your student image
                 alt="Student"
                 width={550}
                 height={700}
