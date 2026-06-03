@@ -18,18 +18,18 @@ export default function Home() {
   return (
     <>
     <TopBar />
-    <Navbar />
-    <HeroSection />
+    <Navbar />   {/* done */}
+    <HeroSection />  {/* done */}
     <CoursePortalsSection />
-    <AcademicSuccessSection />
-    <OnlineClassSection />
-    <OfferSection />
-    <RegistrationProcess />
-    <HeroContentSection />
-    <SubjectSection />
+    <AcademicSuccessSection />    {/* done */}
+    <OnlineClassSection />   {/* done */}
+    <OfferSection />    {/* done */}
+    <RegistrationProcess />   {/* done */}
+    <HeroContentSection />   {/* done */}
+    <SubjectSection />   {/* done */}
     <SimpleOrderingProcess />
-    <UniversitySection />
-    <TestimonialsSection />
+    <UniversitySection />  
+    <TestimonialsSection />    {/* done */}
     <FAQSection />
     <Footer />
     </>

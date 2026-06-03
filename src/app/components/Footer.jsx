@@ -33,7 +33,7 @@ export default function Footer() {
             {/* Logo */}
             <div className="mb-8">
               <Image
-                src="/logo-white.png"
+                src="/virtual-logo.jpeg"
                 alt="Virtual Exam Helper"
                 width={240}
                 height={80}
@@ -47,14 +47,14 @@ export default function Footer() {
             </p>
 
             {/* Payment Methods */}
-            <div className="flex items-center gap-5 mt-10 flex-wrap">
+            <div>
               <Image
-                src="/zelle.png"
+                src="/footer-icons.png"
                 alt="Zelle"
-                width={55}
-                height={55}
+                width={255}
+                height={255}
               />
-              <Image
+              {/* <Image
                 src="/cashapp.png"
                 alt="Cash App"
                 width={55}
@@ -71,7 +71,7 @@ export default function Footer() {
                 alt="Bank"
                 width={55}
                 height={55}
-              />
+              /> */}
             </div>
           </div>
 

@@ -38,10 +38,10 @@ const portals = [
 
 export default function CoursePortalsSection() {
   return (
-    <section className="bg-[#f5f5f5] py-16 lg:py-24 overflow-hidden">
+    <section className="bg-white py-16 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-center text-[#112B55] font-bold leading-tight text-4xl md:text-5xl lg:text-6xl max-w-6xl mx-auto mb-16">
+        <h2 className="text-center text-[#112B55] font-bold leading-tight text-4xl md:text-5xl lg:text-5xl max-w-6xl mx-auto mb-16">
           Explore The Course Portals We Collaborate With At Virtual Exam
           Helper
         </h2>
@@ -77,7 +77,7 @@ export default function CoursePortalsSection() {
                 <img
                   src={portal.logo}
                   alt={portal.name}
-                  className="max-h-[80px] w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  className="max-h-[100px] w-auto object-contain transition-all duration-300"
                 />
               </div>
             </SwiperSlide>

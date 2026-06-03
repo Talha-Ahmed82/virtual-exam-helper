@@ -1,11 +1,25 @@
 export default function HeroContentSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-r from-[#001634] via-[#0A0D3F] to-[#970000] py-20 lg:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section
+      className="relative overflow-hidden py-20 lg:py-24 bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('/chat-pic.png')",
+      }}
+    >
+      {/* Optional dark overlay */}
+      <div className="absolute inset-0 bg-black/40"></div>
+
+      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
         {/* Heading */}
-        <h2 className="mx-auto max-w-6xl text-center text-white font-semibold leading-tight text-4xl md:text-5xl lg:text-[64px] lg:leading-[1.1]">
+        <h2 className="mx-auto max-w-6xl text-center text-white leading-tight font-bold text-[34px] md:text-[42px] lg:text-[52px] lg:leading-tight">
           Overcome A Busy Schedule With Virtual Exam Helper Online Class Help
         </h2>
+
+          {/* <h2 className="text-[#0B2E6D] text-center font-bold text-[34px] md:text-[42px] lg:text-[52px] leading-tight mb-6">
+              Our
+              <span className="text-[#D4AF37]"> Registration </span>
+              Process
+            </h2> */}
 
         {/* Description */}
         <div className="mx-auto mt-10 max-w-6xl">

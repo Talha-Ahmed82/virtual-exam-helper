@@ -7,12 +7,12 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const universities = [
-  "/swiper-pic-1.jpg",
-  "/swiper-pic-1.jpg",
-   "/swiper-pic-1.jpg",
-  "/swiper-pic-1.jpg",
-   "/swiper-pic-1.jpg",
-  "/swiper-pic-1.jpg",
+  "/uni-pic-1.webp",
+  "/uni-pic-2.webp",
+  "/uni-pic-3.webp",
+  "/uni-pic-4.webp",
+  "/uni-pic-5.webp",
+  "/uni-pic-6.webp",
 ];
 
 export default function UniversitySection() {
