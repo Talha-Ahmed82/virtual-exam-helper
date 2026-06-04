@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
@@ -42,8 +42,7 @@ export default function CoursePortalsSection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <h2 className="text-center text-[#112B55] font-bold leading-tight text-4xl md:text-5xl lg:text-5xl max-w-6xl mx-auto mb-16">
-          Explore The Course Portals We Collaborate With At Virtual Exam
-          Helper
+          Explore The Course Portals We Collaborate With At Virtual Exam Helper
         </h2>
 
         {/* Logo Slider */}
@@ -74,9 +73,11 @@ export default function CoursePortalsSection() {
           {portals.map((portal, index) => (
             <SwiperSlide key={index}>
               <div className="flex items-center justify-center h-[120px]">
-                <img
+                <Image
                   src={portal.logo}
                   alt={portal.name}
+                  width={200}
+                  height={100}
                   className="max-h-[100px] w-auto object-contain transition-all duration-300"
                 />
               </div>

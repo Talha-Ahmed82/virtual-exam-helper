@@ -2,167 +2,191 @@
 
 import Image from "next/image";
 import {
-  FaPlus,
   FaPhoneAlt,
   FaMapMarkerAlt,
   FaComments,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { ChevronRight } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#091321] text-white overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/footer-bg.webp" // Add your footer background image here
-          alt="Footer Background"
-          fill
-          className="object-cover opacity-70"
-        />
-      </div>
-
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-[#091321]/70" />
-
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    <footer className="bg-[#F3F3F3] border-t border-slate-200">
+      {/* Main Footer */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          
           {/* Column 1 */}
           <div>
-            {/* Logo */}
-            <div className="mb-8">
+            <Image
+              src="/virtual-logo.jpeg"
+              alt="Virtual Exam Helper"
+              width={180}
+              height={60}
+              className="object-contain"
+            />
+
+            <p className="mt-5 text-[#475569] text-sm md:text-base leading-7 max-w-[280px]">
+              Professional online class, exam, coursework, and academic
+              assistance services designed to help students achieve success.
+            </p>
+
+            <div className="mt-5">
               <Image
-                src="/virtual-logo.jpeg"
-                alt="Virtual Exam Helper"
-                width={240}
-                height={80}
+                src="/footer-icons.png"
+                alt="Payment Methods"
+                width={180}
+                height={50}
                 className="object-contain"
               />
             </div>
-
-            <p className="text-[18px] leading-[1.8] text-white/95 max-w-[320px]">
-              We offer online class, course, exam and all sort of homework and
-              assignments services to the students.
-            </p>
-
-            {/* Payment Methods */}
-            <div>
-              <Image
-                src="/footer-icons.png"
-                alt="Zelle"
-                width={255}
-                height={255}
-              />
-              {/* <Image
-                src="/cashapp.png"
-                alt="Cash App"
-                width={55}
-                height={55}
-              />
-              <Image
-                src="/usdt.png"
-                alt="USDT"
-                width={55}
-                height={55}
-              />
-              <Image
-                src="/bank.png"
-                alt="Bank"
-                width={55}
-                height={55}
-              /> */}
-            </div>
           </div>
 
-          {/* Column 2 */}
+          {/* Services */}
           <div>
-            <h3 className="text-[#ff1515] text-4xl font-medium mb-8">
+            <h3 className="text-[#0B2E6D] text-xl font-semibold mb-5">
               Services
             </h3>
 
-            <ul className="space-y-5">
+            <ul className="space-y-3">
               {[
                 "Online Class",
                 "Online Exam",
                 "GED",
-                "Hesi",
-                "Teas",
+                "HESI",
+                "TEAS",
               ].map((item) => (
-                <li key={item} className="flex items-center gap-4">
-                  <FaPlus className="text-[#ff1515] text-lg" />
-                  <span className="text-2xl">{item}</span>
+                <li
+                  key={item}
+                  className="
+                    flex
+                    items-center
+                    gap-2
+                    text-[#475569]
+                    text-sm
+                    md:text-base
+                    hover:text-[#123D84]
+                    transition
+                    cursor-pointer
+                  "
+                >
+                  <ChevronRight
+                    size={16}
+                    className="text-[#D4AF37]"
+                  />
+                  {item}
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 3 */}
+          {/* Useful Links */}
           <div>
-            <h3 className="text-[#ff1515] text-4xl font-medium mb-8">
+            <h3 className="text-[#0B2E6D] text-xl font-semibold mb-5">
               Useful Links
             </h3>
 
-            <ul className="space-y-5">
-              {["Terms & Condition", "Privacy Policy"].map((item) => (
-                <li key={item} className="flex items-center gap-4">
-                  <FaPlus className="text-[#ff1515] text-lg" />
-                  <span className="text-2xl">{item}</span>
+            <ul className="space-y-3">
+              {[
+                "Terms & Conditions",
+                "Privacy Policy",
+              ].map((item) => (
+                <li
+                  key={item}
+                  className="
+                    flex
+                    items-center
+                    gap-2
+                    text-[#475569]
+                    text-sm
+                    md:text-base
+                    hover:text-[#123D84]
+                    transition
+                    cursor-pointer
+                  "
+                >
+                  <ChevronRight
+                    size={16}
+                    className="text-[#D4AF37]"
+                  />
+                  {item}
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 4 */}
+          {/* Contact */}
           <div>
-            <h3 className="text-[#ff1515] text-4xl font-medium mb-8">
-              Contact Links
+            <h3 className="text-[#0B2E6D] text-xl font-semibold mb-5">
+              Contact Us
             </h3>
 
-            <div className="space-y-8">
-              {/* Email */}
-              <div className="flex gap-4">
-                <MdEmail className="text-[#ff1515] text-3xl mt-1 shrink-0" />
-                <span className="text-xl break-all">
+            <div className="space-y-5">
+              <div className="flex gap-3">
+                <MdEmail
+                  className="text-[#D4AF37] mt-1 shrink-0"
+                  size={18}
+                />
+
+                <span className="text-[#475569] text-sm md:text-base break-all">
                   info@virtualexamhelper.com
                 </span>
               </div>
 
-              {/* Phone */}
-              <div className="flex gap-4">
-                <FaPhoneAlt className="text-[#ff1515] text-3xl mt-1 shrink-0" />
-                <span className="text-xl">+1 (727) 240-5228</span>
+              <div className="flex gap-3">
+                <FaPhoneAlt
+                  className="text-[#D4AF37] mt-1 shrink-0"
+                  size={16}
+                />
+
+                <span className="text-[#475569] text-sm md:text-base">
+                  +1 (727) 240-5228
+                </span>
               </div>
 
-              {/* Address */}
-              <div className="flex gap-4">
-                <FaMapMarkerAlt className="text-[#ff1515] text-3xl mt-1 shrink-0" />
-                <span className="text-xl leading-relaxed">
+              <div className="flex gap-3">
+                <FaMapMarkerAlt
+                  className="text-[#D4AF37] mt-1 shrink-0"
+                  size={18}
+                />
+
+                <span className="text-[#475569] text-sm md:text-base leading-6">
                   2600 NW 67TH ST
                   <br />
                   MIAMI FL 33147-7244 USA
                 </span>
               </div>
 
-              {/* Chat */}
-              <div className="flex gap-4">
-                <FaComments className="text-[#ff1515] text-3xl mt-1 shrink-0" />
+              <div className="flex gap-3">
+                <FaComments
+                  className="text-[#D4AF37] mt-1 shrink-0"
+                  size={18}
+                />
+
                 <a
                   href="#"
-                  className="text-xl font-semibold underline hover:text-red-400 transition"
+                  className="
+                    text-[#123D84]
+                    text-sm
+                    md:text-base
+                    font-medium
+                    hover:text-[#0B2E6D]
+                    transition
+                  "
                 >
                   Chat Now
                 </a>
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
-      {/* Bottom Copyright Bar */}
-      <div className="relative z-10 bg-[#02004f] py-5">
-        <div className="text-center text-xl md:text-2xl text-white">
-          2025 © – Virtual Exam Helper – All Rights Reserved.
+      {/* Copyright */}
+      <div className="bg-[#0B2E6D] py-4">
+        <div className="text-center text-white text-sm md:text-base">
+          © 2025 Virtual Exam Helper. All Rights Reserved.
         </div>
       </div>
     </footer>

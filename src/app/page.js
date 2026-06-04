@@ -27,11 +27,11 @@ export default function Home() {
     <RegistrationProcess />   {/* done */}
     <HeroContentSection />   {/* done */}
     <SubjectSection />   {/* done */}
-    <SimpleOrderingProcess />
-    <UniversitySection />  
+    <SimpleOrderingProcess />   {/* done */}
+    <UniversitySection />  {/* done */}
     <TestimonialsSection />    {/* done */}
-    <FAQSection />
-    <Footer />
+    <FAQSection />    {/* done */}
+    <Footer />    {/* done */}
     </>
   );
 }

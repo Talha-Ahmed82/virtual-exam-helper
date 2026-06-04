@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AcademicSuccessSection() {
   return (
     <section className="relative overflow-hidden bg-[#0B2E6D] min-h-[85vh]">
@@ -22,30 +24,33 @@ export default function AcademicSuccessSection() {
               className="w-full max-w-[580px] object-contain"
             />
           </div> */}
-          <div className="relative">
+        <div className="relative">
   <div className="absolute inset-0 bg-[#D4AF37]/20 blur-3xl rounded-full"></div>
 
-  <img
+  <Image
     src="/boy-pic.png"
     alt="Student"
-    className="relative z-10 w-full max-w-[580px] object-contain"
+    width={580}
+    height={700}
+    className="relative z-10 w-full max-w-[580px] h-auto object-contain"
+    priority
   />
 </div>
 
           {/* Right Content */}
           <div className="text-white py-16 lg:py-0">
-           <h2 className="text-3xl md:text-4xl lg:text-5xl leading-tight font-bold mb-8">
-  Easily Achieve
-  <span className="text-[#D4AF37]"> Academic Success </span>
-  With Virtual Exam Helper
-</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl leading-tight font-bold mb-8">
+              Easily Achieve
+              <span className="text-[#D4AF37]"> Academic Success </span>
+              With Virtual Exam Helper
+            </h2>
 
             <p className="text-base md:text-lg lg:text-[18px] leading-8 text-slate-200">
               With Virtual Exam Helper online class support, you can achieve
-              academic excellence without the pressure of attending classes.
-              Our staff of knowledgeable tutors is committed to helping you
-              through your schoolwork, offering individualised guidance, and
-              making sure you meet your academic objectives.
+              academic excellence without the pressure of attending classes. Our
+              staff of knowledgeable tutors is committed to helping you through
+              your schoolwork, offering individualised guidance, and making sure
+              you meet your academic objectives.
             </p>
 
             <p className="mt-6 text-base md:text-lg lg:text-[18px] leading-8 text-slate-200">

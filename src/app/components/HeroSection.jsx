@@ -28,7 +28,7 @@ export default function HeroSection() {
               Your
               <span className="text-[#D4AF37]"> Success </span>
               Journey
-              <br class="hidden md:hidden" />
+              <br className="hidden md:hidden" />
               <span> Starts Here!</span> 
             </h1>
 

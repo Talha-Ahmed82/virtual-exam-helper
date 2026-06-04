@@ -23,7 +23,7 @@ export default function HeroContentSection() {
 
         {/* Description */}
         <div className="mx-auto mt-10 max-w-6xl">
-          <p className="text-center text-white text-lg md:text-xl lg:text-[24px] leading-[1.8]">
+          <p className="text-center text-[#E2E8F0] text-base md:text-lg leading-relaxed">
             Unlock Academic Success and Reach Your Full Potential with Virtual
             Exam Helper do my online class experts. Whether you struggle to
             keep up with coursework or aim to improve your grades, our highly
@@ -37,7 +37,7 @@ export default function HeroContentSection() {
 
         {/* Search Tags */}
         <div className="mx-auto mt-14 max-w-6xl">
-          <p className="text-center text-white text-lg md:text-xl lg:text-[24px] leading-[1.8]">
+          <p className="text-center text-[#E2E8F0] text-base md:text-lg leading-relaxed">
             <span className="font-medium">Our Search Tags:</span> Pay Someone
             To Do My Online Exam, Take My Exam For Me, Do My Proctored Exam for
             me, Best Online Exam Help, Hire Someone To Do My Exam, Can Someone
