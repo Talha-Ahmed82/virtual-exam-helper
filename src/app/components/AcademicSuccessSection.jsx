@@ -24,18 +24,18 @@ export default function AcademicSuccessSection() {
               className="w-full max-w-[580px] object-contain"
             />
           </div> */}
-        <div className="relative">
-  <div className="absolute inset-0 bg-[#D4AF37]/20 blur-3xl rounded-full"></div>
+          <div className="relative">
+            <div className="absolute inset-0 bg-[#D4AF37]/20 blur-3xl rounded-full"></div>
 
-  <Image
-    src="/boy-pic.png"
-    alt="Student"
-    width={580}
-    height={700}
-    className="relative z-10 w-full max-w-[580px] h-auto object-contain"
-    priority
-  />
-</div>
+            <Image
+              src="/boy-pic.png"
+              alt="Student"
+              width={580}
+              height={700}
+              className="relative z-10 w-full max-w-[580px] h-auto object-contain"
+              priority
+            />
+          </div>
 
           {/* Right Content */}
           <div className="text-white py-16 lg:py-0">
